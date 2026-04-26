@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Reading Companion Wireframes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      line-height: 1.6;
+      color: #111;
+    }
+
+    h1 {
+      font-size: 24px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 8px;
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 4px;
+    }
+
+    .box {
+      border: 1px solid #ccc;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 12px;
+      background: #fafafa;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>AI Reading Companion — Wireframes</h1>
+
+  ---
+
+  <h2>1. Home Page (/)</h2>
+
+  <div class="box">
+    <div class="label">Top Bar</div>
+    App Name | Search | Profile
+  </div>
+
+  <div class="box">
+    <div class="label">Recall Card</div>
+    <ul>
+      <li>Prompt (concept/question)</li>
+      <li>Reveal answer button</li>
+      <li>“Got it” / “Missed” buttons</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <div class="label">Feed</div>
+    <ul>
+      <li>List of saved entries</li>
+      <li>Each entry = short cleaned text + concept tag</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <div class="label">Capture Trigger</div>
+    Floating "+" button (bottom-right)
+  </div>
+
+  ---
+
+  <h2>2. Search Page (/search)</h2>
+
+  <div class="box">
+    <div class="label">Search Input</div>
+    "What do I know about focus?"
+  </div>
+
+  <div class="box">
+    <div class="label">Results Area</div>
+    <ul>
+      <li>AI summary (optional enhancement)</li>
+      <li>List of matching entries</li>
+    </ul>
+  </div>
+
+  ---
+
+  <h2>3. Capture Modal</h2>
+
+  <div class="box">
+    <div class="label">Input</div>
+    What did you learn today?
+  </div>
+
+  <div class="box">
+    <div class="label">Optional Field</div>
+    Source (book / article)
+  </div>
+
+  <div class="box">
+    <div class="label">Actions</div>
+    Save → closes modal immediately
+  </div>
+
+  ---
+
+  <h2>4. Key UX Flow</h2>
+
+  <div class="box">
+    Type → Capture → Stored → Appears in Feed → Later Retrieved via Search or Recall
+  </div>
+
+  ---
+
+  <h2>5. Notes</h2>
+
+  <div class="box">
+    <ul>
+      <li>Capture must be fast (<5 seconds)</li>
+      <li>No required fields</li>
+      <li>AI processing is async (never blocks UI)</li>
+      <li>Focus is on memory recall, not note-taking</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
